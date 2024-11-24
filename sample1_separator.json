@@ -1,0 +1,311 @@
+{
+    "basis": {
+        "id": "11E0DB28-3781-44F9-B312-7792F006FD02",
+        "name": "basis 222",
+        "thermoPackage": {
+            "packageName": "PR",
+            "packageSo": "some_module.so",
+            "properties": {
+                "alphaFunction": "extrapolate",
+                "hydrogenFunction": "modified",
+                "viscosityOfVapor": "molarAverage",
+                "viscosityOfLiquid": "molarAverage",
+                "thermalConductivityOfVapor": "molarAverage",
+                "thermalConductivityOfLiquid": "li",
+                "heatCapacityOfLiquid": "EOS",
+                "surfaceTension": "molarAverage",
+                "enthalpy": "EOS",
+                "entropy": "EOS",
+                "liquidDensity": "costald"
+            }
+        },
+        "componentList": [
+            {
+                "name": "Ethane",
+                "id": "481cc4f4-549c-4a08-b283-046f7f9390d0",
+                "componentClass": "hydrocarbons",
+                "basicProperties": {
+                    "acentricFactor": 0.0986000001430511,
+                    "criticalPressure": 4883850.09765625,
+                    "criticalTemperature": 305.428009033203,
+                    "criticalVolume": 0.000148000001907349,
+                    "criticalCompressibilityFactor": 284.783066088786,
+                    "molarMass": 0.0300699005126953,
+                    "normalBoilingPoint": 184.550003051758,
+                    "liquidDensityAt15C": 355.683013916016,
+					"costaldVolume": 0.00014575,
+					"acentricFactorSRK": 9.83E-02
+                },
+                "correlationProperties": [
+                    {
+                        "name": "idealGasEnthalpy",
+                        "coeffs": [
+                            -53.1485491561889,
+                            34.3668892959594,
+                            -0.00973061980590819,
+                            0.000127589594865417,
+                            -1.02031983623657e-7,
+                            2.6524538962646397e-11
+                        ],
+                        "eq": "poly5",
+                        "tmax": 5273.15,
+                        "tmin": 3.15
+                    },
+                    {
+                        "name": "idealGasHeatCapacity",
+                        "coeffs": [
+                            -53.1485491561889,
+                            34.3668892959594,
+                            -0.00973061980590819,
+                            0.000127589594865417,
+                            -1.02031983623657e-7
+                        ],
+                        "eq": "dippr16",
+                        "tmax": 5273.15,
+                        "tmin": 3.15
+                    },
+                    {
+                        "name": "viscosityOfVapor",
+                        "coeffs": [
+                            5.2452e-7,
+                            0.58906,
+                            188.8,
+                            -2953.8
+                        ],
+                        "eq": "dippr102",
+                        "tmax": 1000,
+                        "tmin": 90.35
+                    }
+                ]
+            },
+            {
+                "name": "Propane",
+                "id": "3cc6a079-968e-4985-b17d-66cf68eab59b",
+                "componentClass": "hydrocarbons",
+                "basicProperties": {
+                    "acentricFactor": 0.152400001883507,
+                    "criticalPressure": 4256660.15625,
+                    "criticalTemperature": 369.898010253906,
+                    "criticalVolume": 0.000200000002980232,
+                    "criticalCompressibilityFactor": 276.95930548758,
+                    "molarMass": 0.0440970001220703,
+                    "normalBoilingPoint": 231.048004150391,
+                    "liquidDensityAt15C": 506.678009033203,
+					"costaldVolume": 0.0002000,
+					"acentricFactorSRK": 0.15320000
+
+                },
+                "correlationProperties": [
+                    {
+                        "name": "idealGasEnthalpy",
+                        "coeffs": [
+                            1741.34202812042,
+                            17.4183150482177,
+                            0.0932250269880675,
+                            0.0000174838431903991,
+                            -2.94204601534423e-8,
+                            7.40547381249999e-12
+                        ],
+                        "eq": "poly5",
+                        "tmax": 5273.15,
+                        "tmin": 3.15
+                    },
+                    {
+                        "name": "idealGasHeatCapacity",
+                        "coeffs": [
+                            87.486,
+                            -13371,
+                            150.0122447,
+                            -0.5459,
+                            0.00068504
+                        ],
+                        "eq": "dippr16",
+                        "tmax": 5273.15,
+                        "tmin": 3.15
+                    },
+                    {
+                        "name": "viscosityOfVapor",
+                        "coeffs": [
+                            4.7422e-8,
+                            0.90416,
+                            -4.7484,
+                            478.57
+                        ],
+                        "eq": "dippr102",
+                        "tmax": 1000,
+                        "tmin": 85.47
+                    }
+                ]
+            },
+            {
+                "name": "i-Butane",
+                "id": "9172ca65-2369-4c63-af55-a1fc412b65e2",
+                "componentClass": "hydrocarbons",
+                "basicProperties": {
+                    "acentricFactor": 0.184790000319481,
+                    "criticalPressure": 3647620.1171875,
+                    "criticalTemperature": 408.096008300781,
+                    "criticalVolume": 0.000263000011444092,
+                    "criticalCompressibilityFactor": 282.879840857125,
+                    "molarMass": 0.0581240005493164,
+                    "normalBoilingPoint": 261.420013427734,
+                    "liquidDensityAt15C": 561.966003417969,
+					"costaldVolume": 0.00025683,
+					"acentricFactorSRK": 0.18250000
+                },
+                "correlationProperties": [
+                    {
+                        "name": "idealGasEnthalpy",
+                        "coeffs": [
+                            1796.20598897552,
+                            8.9104092842102,
+                            0.153144535407333,
+                            0.00000422692844234771,
+                            -4.23082275038452e-8,
+                            1.37600433940429e-11
+                        ],
+                        "eq": "poly5",
+                        "tmax": 5273.15,
+                        "tmin": 3.15
+                    },
+                    {
+                        "name": "idealGasHeatCapacity",
+                        "coeffs": [
+                            89.466,
+                            -323.61,
+                            5.919244721,
+                            -0.010476,
+                            0.000025037
+                        ],
+                        "eq": "dippr16",
+                        "tmax": 5273.15,
+                        "tmin": 3.15
+                    },
+                    {
+                        "name": "viscosityOfVapor",
+                        "coeffs": [
+                            3.951e-8,
+                            0.90975,
+                            -52.076,
+                            8625.4
+                        ],
+                        "eq": "dippr102",
+                        "tmax": 1000,
+                        "tmin": 150
+                    }
+                ]
+            }
+        ],
+        "bics": [
+            {
+                "comp1": "481cc4f4-549c-4a08-b283-046f7f9390d0",
+                "comp2": "3cc6a079-968e-4985-b17d-66cf68eab59b",
+                "value": 0.00125795602798462
+            },
+            {
+                "comp1": "481cc4f4-549c-4a08-b283-046f7f9390d0",
+                "comp2": "9172ca65-2369-4c63-af55-a1fc412b65e2",
+                "value": 0.00457346439361572
+            },
+            {
+                "comp1": "3cc6a079-968e-4985-b17d-66cf68eab59b",
+                "comp2": "9172ca65-2369-4c63-af55-a1fc412b65e2",
+                "value": 0.00104051828384399
+            }
+        ]
+    },
+    "inputs": [
+        {
+            "id": "f3405599-ec53-4323-b92c-d8953431d62c",
+            "type": "material",
+            "portId": "input1",
+            "status": "notCalculated",
+            "basisRef": "11E0DB28-3781-44F9-B312-7792F006FD02",
+            "pressure": 130000,
+            "temperature": 250,
+            "massFlow": 0.277777778,
+            "massFractions": [
+                {
+                    "id": "3cc6a079-968e-4985-b17d-66cf68eab59b",
+                    "value": 0.5
+                },
+                {
+                    "id": "9172ca65-2369-4c63-af55-a1fc412b65e2",
+                    "value": 0.5
+                }
+            ]
+        },
+        {
+            "id": "f3405599-ec53-4323-b92c-d8953431d62d",
+            "type": "energy",
+            "portId": "in-energy",
+            "power": 110.0
+        }
+    ],
+    "outputs": [
+        {
+            "type": "material",
+            "portId": "outvap",
+            "return": [
+                "vaporPressure",
+                "reidVaporPressure",
+                "molarMass",
+                "molarVolume",
+                "compressibilityFactor",
+                "power",
+                "molarHeatCapacity",
+                "massHeatCapacity",
+                "massEnthalpy",
+                "massEntropy",
+                "CpCv",
+                "massDensity",
+                "molarDensity",
+                "thermalConductivity",
+                "viscosity",
+                "kinematicViscosity",
+                "surfaceTension",
+                "molarHeatOfVaporization",
+                "massHeatOfVaporization",
+                "waterDewPoint",
+                "HCdewPoint"
+            ]
+        },
+        {
+            "type": "material",
+            "portId": "outliq",
+            "return": [
+                "vaporPressure",
+                "reidVaporPressure",
+                "molarMass",
+                "molarVolume",
+                "compressibilityFactor",
+                "power",
+                "molarHeatCapacity",
+                "massHeatCapacity",
+                "massEnthalpy",
+                "massEntropy",
+                "CpCv",
+                "massDensity",
+                "molarDensity",
+                "thermalConductivity",
+                "viscosity",
+                "kinematicViscosity",
+                "surfaceTension",
+                "molarHeatOfVaporization",
+                "massHeatOfVaporization",
+                "waterDewPoint",
+                "HCdewPoint"
+            ]
+        }
+    ],
+    "parameters": [
+        {
+            "name": "dp",
+            "value": 14
+        },
+        {
+            "name": "liqentr",
+            "value": 0.001
+        }
+    ]
+}

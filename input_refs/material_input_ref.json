@@ -1,0 +1,21 @@
+{
+  "id": "f3405599-ec53-4323-b92c-d8953431d62c",
+  "type": "material",
+  "portId": "input",
+  "status": "notCalculated",
+  "basisRef": "11E0DB28-3781-44F9-B312-7792F006FD02",
+  "pressure": 130000,
+  "temperature": 250,
+  "massFlow": 0.277777778,
+  "massFractions": [
+    {
+      "id": "3cc6a079-968e-4985-b17d-66cf68eab59b",
+      "value": 0.5
+    },
+    {
+      "id": "9172ca65-2369-4c63-af55-a1fc412b65e2",
+      "value": 0.5
+    }
+  ]
+}
+

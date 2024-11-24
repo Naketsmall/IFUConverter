@@ -1,0 +1,53 @@
+{
+  "name": "Ethane",
+  "id": "undefined",
+  "componentClass": "undefined",
+  "basicProperties": {
+    "acentricFactor": -1,
+    "criticalPressure": -1,
+    "criticalTemperature": -1,
+    "criticalVolume": -1,
+    "criticalCompressibilityFactor": -1,
+    "molarMass": -1,
+    "normalBoilingPoint": -1,
+    "liquidDensityAt15C": -1,
+    "costaldVolume": -1,
+    "acentricFactorSRK": -1
+  },
+  "correlationProperties": [
+    {
+      "name": "idealGasEnthalpy",
+      "coeffs": [
+        -1, -1, -1, -1, -1, -1
+      ],
+      "eq": "poly5",
+      "tmax": -1,
+      "tmin": -1
+    },
+    {
+      "name": "idealGasHeatCapacity",
+      "coeffs": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "eq": "dippr16",
+      "tmax": -1,
+      "tmin": -1
+    },
+    {
+      "name": "viscosityOfVapor",
+      "coeffs": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "eq": "dippr102",
+      "tmax": -1,
+      "tmin": -1
+    }
+  ]
+}

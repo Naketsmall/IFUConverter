@@ -1,0 +1,25 @@
+{
+  "basis": {
+    "id": "11E0DB28-3781-44F9-B312-7792F006FD02",
+    "name": "basis 222",
+    "thermoPackage": {
+      "packageName": "PR",
+      "packageSo": "some_module.so",
+      "properties": {
+        "alphaFunction": "extrapolate",
+        "hydrogenFunction": "modified",
+        "viscosityOfVapor": "molarAverage",
+        "viscosityOfLiquid": "molarAverage",
+        "thermalConductivityOfVapor": "molarAverage",
+        "thermalConductivityOfLiquid": "li",
+        "heatCapacityOfLiquid": "EOS",
+        "surfaceTension": "molarAverage",
+        "enthalpy": "EOS",
+        "entropy": "EOS",
+        "liquidDensity": "costald"
+      }
+    },
+    "componentList": [],
+    "bics": []
+  }
+}

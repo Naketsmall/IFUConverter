@@ -1,0 +1,31 @@
+{
+  "outputs": [
+        {
+            "type": "material",
+            "portId": "out1",
+            "return": [
+                "vaporPressure",
+                "reidVaporPressure",
+                "molarMass",
+                "molarVolume",
+                "compressibilityFactor",
+                "power",
+                "molarHeatCapacity",
+                "massHeatCapacity",
+                "massEnthalpy",
+                "massEntropy",
+                "CpCv",
+                "massDensity",
+                "molarDensity",
+                "thermalConductivity",
+                "viscosity",
+                "kinematicViscosity",
+                "surfaceTension",
+                "molarHeatOfVaporization",
+                "massHeatOfVaporization",
+                "waterDewPoint",
+                "HCdewPoint"
+            ]
+        }
+    ]
+}

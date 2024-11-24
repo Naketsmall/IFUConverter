@@ -1,0 +1,139 @@
+{
+  "scheme": {
+    "pattern": "separator2-1",
+    "fluid result mode": "phases+properties"
+  },
+  "components": [
+    "Ethane",
+    "Propane",
+    "i-Butane"
+  ],
+  "definitions": {
+    "EOS": "Peng-Robinson 78",
+    "K-value": "EOS",
+    "Enthalpy": "Excess",
+    "Heat capacity IG": "T correlation",
+    "Vapour Density": "EOS",
+    "Liquid Density Pure component": "COSTALD",
+    "Liquid Density Mixture": "Hankinson Thompson (COSTALD)",
+    "Surface Tension Mixture": "undefined",
+    "Surface Tension Pure component": "undefined",
+    "Liquid Heat Capacity Pure component": "undefined",
+    "Liquid Heat Capacity Mixture": "undefined",
+    "Vapour Heat Capacity Mixture": "undefined"
+  },
+  "components-data": {
+    "Ethane": {
+      "groupname": "chemsep",
+      "order": 101,
+      "parameters": {
+        "acentricFac": 0.0986000001430511,
+        "cp": {
+          "coeffs": [
+            -53.1485491561889,
+            34.3668892959594,
+            -0.00973061980590819,
+            0.000127589594865417,
+            -1.02031983623657e-7
+          ],
+          "eq": 16,
+          "tmax": 5273.15,
+          "tmin": 3.15
+        },
+        "critPres": 4883850.09765625,
+        "critTemp": 305.428009033203,
+        "critZ": 0.28478306608878595,
+        "molarMass": 0.0300699005126953,
+        "costaldVolume": 0.00014575,
+        "acFacSRK": 0.0983
+      }
+    },
+    "Propane": {
+      "groupname": "chemsep",
+      "order": 102,
+      "parameters": {
+        "acentricFac": 0.152400001883507,
+        "cp": {
+          "coeffs": [
+            87.486,
+            -13371.0,
+            150.0122447,
+            -0.5459,
+            0.00068504
+          ],
+          "eq": 16,
+          "tmax": 5273.15,
+          "tmin": 3.15
+        },
+        "critPres": 4256660.15625,
+        "critTemp": 369.898010253906,
+        "critZ": 0.27695930548758,
+        "molarMass": 0.0440970001220703,
+        "costaldVolume": 0.0002,
+        "acFacSRK": 0.1532
+      }
+    },
+    "i-Butane": {
+      "groupname": "chemsep",
+      "order": 103,
+      "parameters": {
+        "acentricFac": 0.184790000319481,
+        "cp": {
+          "coeffs": [
+            89.466,
+            -323.61,
+            5.919244721,
+            -0.010476,
+            0.000025037
+          ],
+          "eq": 16,
+          "tmax": 5273.15,
+          "tmin": 3.15
+        },
+        "critPres": 3647620.1171875,
+        "critTemp": 408.096008300781,
+        "critZ": 0.282879840857125,
+        "molarMass": 0.0581240005493164,
+        "costaldVolume": 0.00025683,
+        "acFacSRK": 0.1825
+      }
+    }
+  },
+  "PR-bics": {
+    "Ethane&Propane": 0.00125795602798462,
+    "Ethane&i-Butane": 0.00457346439361572,
+    "Propane&i-Butane": 0.00104051828384399
+  },
+  "objects": {
+    "separator2-1": {
+      "inouts": {},
+      "values": {
+        "dp": {
+          "type": "double",
+          "value": 14.0
+        },
+        "liqentr": {
+          "type": "double",
+          "value": 0.001
+        }
+      }
+    },
+    "separator2-1-input1": {
+      "flowdefinition": {
+        "type": "fromMassFractionsMassFlow",
+        "pres": 130000.0,
+        "temp": 250.0,
+        "massFlow": 0.277777778,
+        "massFractions": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "separator2-1-in-energy": {
+      "power": 110.0
+    }
+  }
+}
+
